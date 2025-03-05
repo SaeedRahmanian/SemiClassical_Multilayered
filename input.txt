@@ -1,0 +1,6 @@
+Model                = EP1D
+Method               = ***methodfile***
+
+
+System               = slurm  # slurm/htcondor/pc
+Cpus                 = 1
