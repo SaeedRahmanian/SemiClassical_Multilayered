@@ -1,0 +1,26 @@
+#!/bin/bash                                                                                                          
+# Job name:                                                                                                          
+#SBATCH --job-name=*JobName*                                                                  
+#                                                                                                                    
+# Partition:                                                                                                         
+#SBATCH --partition=*partition*                                                                                      
+#                                                                                                                                                                                                                              
+# Processors:                                                                                                        
+#SBATCH --ntasks=*nnn*                                                                                               
+#SBATCH --nodes=*NNN*                                                                                                
+#SBATCH --cpus-per-task=*ccc* 
+#SBATCH --mem-per-cpu=*mmm*                                          
+#                                                                                                                    
+# Wall clock limit:                                                                                                  
+#SBATCH --time=*ttt*                                                                                                 
+#                                                                                                                 
+# Specify output files:                                                                                              
+#SBATCH -o *JobName*.o%j                                                                      
+#------------------------------------------------------                                                              
+                                                                                                                     
+echo "Starting job *JobName*"  
+
+# Run tasks in parallel using GNU Parallel
+parallel --verbose < *TaskFile*
+                                                                                                                     
+echo "Job *JobName* complete"    

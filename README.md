@@ -1,11 +1,11 @@
 ## Submitting jobs
 Create an empty directory, and go to the directory.
 
-To run the job, first copy everything in this folder to the directory you will run the job. Here <run_250129_Polaron>
+To run the job, first copy everything in this folder to the directory you will run the job. Here <SemiClassical_Multilayered>
 then use the following command to rename the necessary files to the directory name
 
 ```
-rename   run_250129_1DMultilayer    <your directory name>    run_250129_1DMultilayer*
+rename   SemiClassical_Multilayered    <your directory name>    SemiClassical_Multilayered*
 ```
 
 in the "***_builder.py" file, change the following line
