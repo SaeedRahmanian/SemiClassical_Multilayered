@@ -38,11 +38,13 @@ In this ***_builder.py version, if you have an N job and each job needs 1 core, 
 
 Using the following lines in the ***_builder.py file, you can update job configurations
 #Configuration
+```
 partition_info=['share', 25, 256]; time_str='0-01:00:00' # = [partition name, ncores per virtual node, Memory in GB]
 cores_per_node = partition_info[1]  # Cores per node
 nb = 1  # Number of nodes per batch
 c_perjob = 1  # Cores per job
 mem = 3  # Memory per job in GB
+```
 
  **I recommend not to change this parameter as they are set to best perform for FASTER, for other clusters (STAMPEDE, Lonsestar6 and EXPANCE) I will update new sbatch.tempelate files, as their launchers are different from FASTER**
 
